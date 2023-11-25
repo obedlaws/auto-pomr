@@ -1,21 +1,15 @@
 package main
 
 import (
-	"github.com/rivo/tview"
+	"pomr/builders"
 )
+
+// var currentDirectory string
 
 func init() {
 
 }
 
 func main() {
-
-	box := tview.NewBox().
-		SetBorder(true).
-		SetTitle("AUTOPOMr")
-
-	if err := tview.NewApplication().SetRoot(box, true).Run(); err != nil {
-		panic(err)
-	}
-
+	builders.CreateDirectories()
 }

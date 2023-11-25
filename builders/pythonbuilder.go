@@ -1,5 +1,0 @@
-package builders
-
-func InitialConfigPython() {
-
-}
